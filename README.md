@@ -2,6 +2,23 @@
 
 A simple fullstack demonstration application with a FastAPI server, a Socket Server backend, and a frontend.
 
+In this project, the FastAPI server and the socket server are two independent backend components that don't directly interact with each other. They serve different purposes and demonstrate different ways to implement server functionality:
+
+FastAPI Server: Uses a modern Python web framework with built-in features like:
+OpenAPI documentation
+Request/response validation
+Dependency injection
+Async support
+
+Socket Server: Uses low-level Python socket programming to:
+Handle HTTP requests manually
+Parse HTTP headers and body
+Format HTTP responses
+
+
+
+
+
 ## Project Structure
 
 ```
@@ -13,6 +30,7 @@ A simple fullstack demonstration application with a FastAPI server, a Socket Ser
 │   └── socket_server/
 │       └── server.py    # Basic HTTP socket server
 └── frontend/            # Frontend application
+
 ```
 
 ## Backend
@@ -49,7 +67,7 @@ cd backend/socket_server
 python server.py
 ```
 
-The server will run on `http://localhost:8000`.
+The server will run on `http://localhost:8002`.
 
 ## Frontend
 
