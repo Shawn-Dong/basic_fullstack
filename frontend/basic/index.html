@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Frontend Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .response {
+            background-color: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 10px;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+    <h1>Basic Frontend Demo</h1>
+    
+    <div class="card">
+        <h2>Socket Server Demo</h2>
+        <p>Fetch data from the basic Python socket server</p>
+        <button id="socketFetchBtn">Fetch Message</button>
+        <div id="socketResponse" class="response"></div>
+    </div>
+    
+    <div class="card">
+        <h2>FastAPI Server Demo</h2>
+        <p>Interact with the FastAPI server</p>
+        <button id="fastapiFetchBtn">Fetch Messages</button>
+        <button id="fastapiCreateBtn">Create Message</button>
+        <div id="fastapiResponse" class="response"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
